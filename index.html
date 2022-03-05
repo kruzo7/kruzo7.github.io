@@ -62,11 +62,24 @@
           <div class="event-tab">
 
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
-              <li role="presentation" class="active"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">News</a></li>
-              <li role="presentation"><a href="#technologies" aria-controls="technologies" role="tab" data-toggle="tab">Technologies</a></li>
-              <li role="presentation"><a href="#projects" aria-controls="projects" role="tab" data-toggle="tab">Projects</a></li>
-              <li role="presentation"><a href="#methodologies" aria-controls="methodologies" role="tab" data-toggle="tab">Methodologies</a></li>
+
+            <ul class="nav nav-tabs nav-fill" role="tablist">
+              <li role="presentation" class="nav-item">
+                <button class="nav-link active" id="news-tab" data-bs-toggle="tab" data-bs-target="#news" type="button"
+                  role="tab" aria-controls="news" aria-selected="true">Start</button>
+              </li>
+              <li role="presentation" class="nav-item">
+                <button class="nav-link" id="technologies-tab" data-bs-toggle="tab" data-bs-target="#technologies"
+                  type="button" role="tab" aria-controls="technologies" aria-selected="false">Overall</button>
+              </li>
+              <li role="presentation" class="nav-item">
+                <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button"
+                  role="tab" aria-controls="projects" aria-selected="false">Projects</button>
+              </li>
+              <li role="presentation" class="nav-item">
+                <button class="nav-link" id="methodologies-tab" data-bs-toggle="tab" data-bs-target="#methodologies"
+                  type="button" role="tab" aria-controls="methodologies" aria-selected="false">Some Ideas?</button>
+              </li>
             </ul>
 
             <!-- Tab panes -->
@@ -74,13 +87,20 @@
 
 
               <!-- TAB -->
-              <div role="tabpanel" class="tab-pane fade in active" id="news">
+              <div role="tabpanel" class="tab-pane fade show active" id="news" aria-labelledby="news-tab">
                 <div class="row">
                   <div class="newsOuter">
                     <div class="news">
-                      <h1>You are looking for project accomplish ???</h1>
-                      <h2>You want to hire me ???</h2>
-                      <h3>Please find contact info below.</h3>
+                      <h1>Hello and Welcome to My Personal Landing Page</h1>
+
+                      <h2>If You are interested find some info about me.</h2>
+
+                      <h3>You are looking for project accomplish?<br />
+                        You want to hire me?<br />
+                        You have other job/project proposal or just want to give some Tips&Tricks?<br />
+                      </h3>
+
+                      <h3>Please find contact below.</h3>
                     </div>
                   </div>
                 </div>
@@ -88,28 +108,157 @@
 
 
               <!-- TAB -->
-              <div role="tabpanel" class="tab-pane fade" id="technologies">
+              <div role="tabpanel" class="tab-pane fade" id="technologies" aria-labelledby="technologies-tab">
                 <div class="row">
-                  Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod
+
+                  <h4>Worked with:</h4><br>
+
+                  <div class="accordion" id="accordionTechnologies">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTechnologies">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTechnologies" aria-expanded="true"
+                          aria-controls="collapseTechnologies">
+                          Technologies:
+                        </button>
+                      </h2>
+                      <div id="collapseTechnologies" class="accordion-collapse collapse show"
+                        aria-labelledby="headingTechnologies" data-bs-parent="#accordionTechnologies">
+                        <div class="accordion-body">
+                          <p>C#, Java, .Net Framework, Spring, Python, SQL, MSSQL, PostgreSQL, OracleDB, MySQL, Entity
+                            Framework, Hibernate, Maven, HTML, CSS, Bootstrap, AngularJS, jQuery, SVN, GIT, Jenkins,
+                            Docker, Basic, Visual Basic, Turbo Pascal, C, C++, WinForms,
+                            ASP.Net</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTools">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTools" aria-expanded="false" aria-controls="collapseTools">
+                          Tools:
+                        </button>
+                      </h2>
+                      <div id="collapseTools" class="accordion-collapse collapse" aria-labelledby="headingTools"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>Visual Studio Code, Atom, Visual Studio, Eclipse, IntelliJ IDEA, Source Tree, Firebug,
+                            Chrome Dev Tools</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingPrinciples">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapsePrinciples" aria-expanded="false" aria-controls="collapsePrinciples">
+                          Programming Principles:
+                        </button>
+                      </h2>
+                      <div id="collapsePrinciples" class="accordion-collapse collapse" aria-labelledby="headingPrinciples"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>Keep It Simple, Stupid (KISS), Don't Repeat Yourself (DRY), Object Oriented Programming
+                            (OOP), Functional Programming</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTrackers">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTrackers" aria-expanded="false" aria-controls="collapseTrackers">
+                          Project Trackers:
+                        </button>
+                      </h2>
+                      <div id="collapseTrackers" class="accordion-collapse collapse" aria-labelledby="headingTrackers"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>Jira, Bugzilla, MS Teams</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingMethodology">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseMethodology" aria-expanded="false" aria-controls="collapseMethodology">
+                          Project Methodology:
+                        </button>
+                      </h2>
+                      <div id="collapseMethodology" class="accordion-collapse collapse" aria-labelledby="headingMethodology"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>Agile, SCRUM, Alone, Sprint, Rolling Releases</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
 
 
               <!-- TAB -->
-              <div role="tabpanel" class="tab-pane fade" id="projects">
-                <h4> Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod<br> Pune 411058</h4><br>
-                <iframe src="https://www.google.com/maps/d/embed?mid=1UMEBYRnM0KZhrhqikVv3YigwUd0" width="640" height="300"></iframe>
+              <div role="tabpanel" class="tab-pane fade" id="projects" aria-labelledby="projects-tab">
+                <h4>Worked on projects:</h4><br>
+
+                <ul>
+                  <li>Own Landing Web Page</li>
+                  <dd>HTML 5, Bootstrap 5</dd>
+
+                  <li>Custom Code</li>
+                  <dd>Java 8, PostgreSQL 12</dd>
+
+                  <li>Insurance Cases Management Web Application</li>
+                  <dd>Java 7,8, Spring 5.0, Hibernate, jQuery 1.11, FTL, OracleDB 12, Jenkins 1, jUnit, Docker, GIT,
+                    Maven, Tomcat</dd>
+
+                  <li>Book Store Management Web Application</li>
+                  <dd>Java 8, Spring 5.0, AngularJS 1, GIT, H2 DB</dd>
+
+                  <li>Insurance Cases Management Desktop and Web Application</li>
+                  <dd>C# 6, .Net 4.6, WinForms, ASP.Net, jQuery 1.11, nHibernate, MSSQL 2012, GIT</dd>
+
+                  <li>Company Employee Technical Skill Rating Web Application</li>
+                  <dd>C# 6, .Net 4.6, MSSQL 2012, Bootstrap 3, AngularJS 1, GIT</dd>
+
+                  <li>Web API</li>
+                  <dd>C# 5, .Net 4.5, WCF, PostgreSQL 8, SVN</dd>
+
+                  <li>Client Job Tasks Tracker Web Application</li>
+                  <dd>C# 5, .Net 4.5, MSSQL 2008, ASP.Net, Entity Framework, jQuery 1.10, SVN</dd>
+
+                  <li>Internal Business Logic DLL</li>
+                  <dd>C# 5, .Net 4.5, MSSQL 2008, SVN</dd>
+
+                  <li>Custom Client Tasks Portal HTTP API Desktop Application</li>
+                  <dd>C# 4, .Net 4, MSSQL 2008, Firebug, SVN</dd>
+
+                  <li>Automatic Processing and Transferring of Text Files Desktop Application</li>
+                  <dd>C# 4, .Net 4, WinForms, MSSQL 2008, SVN</dd>
+
+                  <li>Processing Text Files Desktop Application</li>
+                  <dd>C# 4, .Net 4, WinForms, Excel, SVN</dd>
+
+                  <li>Processing File Transfers Desktop Application</li>
+                  <dd>C# 4, .Net 4, WinForms, SVN</dd>
+
+                  <li>Custom SQL Queries</li>
+                  <dd>MSSQL 2008, SVN</dd>
+
+                  <li>Small Company Website</li>
+                  <dd>HTML 4, CSS 2, JavaScript ES5</dd>
+
+                  <li>Small Company Website</li>
+                  <dd>HTML 4, CSS 2</dd>
+
+                  <li>Custom Python Scripts</li>
+                  <dd>Python 2</dd>
+                </ul>
               </div>
 
 
               <!-- TAB -->
-              <div role="tabpanel" class="tab-pane fade" id="methodologies">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+              <div role="tabpanel" class="tab-pane fade" id="methodologies" aria-labelledby="methodologies-tab">
+                <h4>Ideas?</h4>
               </div>
 
             </div>
@@ -119,17 +268,22 @@
 
 
           <!-- Footer -->
+
           <div class="footer">
             <div class="row">
-              <div class="col-xs-6">
+              <div class="col-xs-6 justify-content-end">
                 <p class="icon-footer">
-                  <a href="https://github.com/kruzo7"> <span class="icon-github"></span> GitHub </a> <span class="divider"></span>
-                  <a href="https://www.linkedin.com/in/waldemar-rutkowski-20a5591a4/"><span class="icon-linkedin"></span> LinkedIn </a> <span class="divider"></span>
-                  <a href="mailto:kruzo7@gmail.com"> @ <span class="icon-email"></span> E-Mail </a> <span class="divider"></span>
+                  <a href="https://github.com/kruzo7"> <span class="icon-github"></span> GitHub </a> <span
+                    class="divider"></span>
+                  <a href="https://www.linkedin.com/in/waldemar-rutkowski-20a5591a4/"><span
+                      class="icon-linkedin"></span> LinkedIn </a> <span class="divider"></span>
+                  <a href="mailto:kruzo7@gmail.com"><span class="icon-email"></span> E-Mail </a> <span
+                    class="divider"></span>
                 </p>
               </div>
             </div>
           </div>
+
 
         </div>
       </div>
