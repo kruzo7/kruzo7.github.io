@@ -5,6 +5,7 @@ html, body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 /* common style's */
@@ -49,38 +50,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .5;
 }
 
-/* form style */
-label {
-  font-weight: 400;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-control {
-  height: 40px;
-  font-size: 18px;
-  border: 0;
-  border-bottom: 1px solid #ccc;
-  border-radius: 0px;
-  padding: 6px 0px;
-  box-shadow: none;
-  font-weight: 100;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.form-control:focus {
-  border-color: #666666;
-  outline: 0;
-  box-shadow: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
 /* loader */
 .loader {
   position: fixed;
@@ -119,10 +88,10 @@ label {
 
 .logo h1 {
   font-family: 'Nixie One', sans-serif;
+  font-weight: bold;
+  font-size: 28px;  
   position: absolute;
-  color: #ffffff;
-  font-size: 28px;
-  font-weight: 300;
+  color: #ffffff;  
   margin: 0;
   top: 20px;
   left: 20px;
@@ -163,9 +132,9 @@ label {
   border-bottom: 1px solid #fff;
 }
 
-/* event ticket css */
-.event-ticket-wrapper {
-  padding: 40px;
+/* event tab css */
+.event-tab-wrapper {
+  padding: 40px;  
 }
 
 .event-tab .nav-tabs {
@@ -207,7 +176,11 @@ label {
 }
 
 .event-tab .tab-content .tab-pane {
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+}
+
+.tab-pane {
+  margin-top: 1rem;
 }
 
 .newsOuter {
@@ -224,13 +197,38 @@ label {
 }
 
 .accordion {
-  margin-top: 2em;
+  margin-top: 2em; 
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #000000;
+  color: #f4c235;
+}
+
+.accordion-button {
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+.accordion-body {
+  font-size: 1.15rem;
+}
+
+.workedOnProjects {
+  font-size: 1.15rem;
+  margin-top: 1.5em;
+  margin-left: 2em;    
+  padding-right: 1.5em;
+}
+
+.workedOnProjects li {  
+  font-weight: bold;
 }
 
 /* footer style */
 .footer {
-  padding: 20px 40px;
-  background: #fff;
+  padding: 20px 40px;  
+  background: #d0d0d0;
   margin-bottom: 0;
   position: fixed;
   bottom: 0;
@@ -239,16 +237,16 @@ label {
   z-index: 99;
 }
 
-.footer li {
+.footer a {
   color: #000;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   margin-top: 8px;
 }
 
-.footer li .divider {
-  border-right: 2px solid #ccc;
+.footer .divider {
+  border-right: 3px solid #ccc;
   padding-left: 15px;
   margin-right: 15px;
 }
@@ -294,7 +292,7 @@ label {
     font-size: 16px;
   }
 
-  .event-ticket-wrapper {
+  .event-tab-wrapper {
     padding: 20px;
   }
 
@@ -312,8 +310,7 @@ label {
   }
 
   .footer {
-    padding: 15px;
-    background: #fff;
+    padding: 15px;    
     margin-bottom: 0;
     position: fixed;
     left: 0;
@@ -325,10 +322,7 @@ label {
 
 /* media query for Mobile */
 @media (max-width: 480px) {
-  .modal.left .modal-dialog, .modal.right .modal-dialog {
-    width: 100%;
-  }
-
+ 
   .event-tab .nav-tabs>li>button {
     font-size: 16px;
     margin-right: 0;
@@ -339,12 +333,12 @@ label {
     width: 100%;
   }
 
-  .footer li {
+  .footer a {
     font-size: 16px;
     margin: 0;
   }
 
-  .footer li .divider {
+  .footer a .divider {
     border-right: 0px;
     padding-left: 0;
     margin-right: 0;

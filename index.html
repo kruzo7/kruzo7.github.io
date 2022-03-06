@@ -8,29 +8,14 @@
 
   <title>Software Developer</title>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/sitescript.js"></script>
 
-  <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
 
-  <!-- fonts -->
   <link href="css/fonts.css" rel="stylesheet">
-
-  <!--
-  <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
-  -->
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
@@ -57,7 +42,7 @@
 
       <div class="col-sm-7 right-wrapper">
 
-        <div class="event-ticket-wrapper">
+        <div class="event-tab-wrapper">
 
           <div class="event-tab">
 
@@ -76,15 +61,11 @@
                 <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button"
                   role="tab" aria-controls="projects" aria-selected="false">Projects</button>
               </li>
-              <li role="presentation" class="nav-item">
-                <button class="nav-link" id="methodologies-tab" data-bs-toggle="tab" data-bs-target="#methodologies"
-                  type="button" role="tab" aria-controls="methodologies" aria-selected="false">Some Ideas?</button>
-              </li>
             </ul>
 
             <!-- Tab panes -->
-            <div class="tab-content">
 
+            <div class="tab-content">
 
               <!-- TAB -->
               <div role="tabpanel" class="tab-pane fade show active" id="news" aria-labelledby="news-tab">
@@ -92,28 +73,22 @@
                   <div class="newsOuter">
                     <div class="news">
                       <h1>Hello and Welcome to My Personal Landing Page</h1>
-
-                      <h2>If You are interested find some info about me.</h2>
-
+                      <h2>If You are interested, find some info about me.</h2>
                       <h3>You are looking for project accomplish?<br />
                         You want to hire me?<br />
                         You have other job/project proposal or just want to give some Tips&Tricks?<br />
                       </h3>
-
                       <h3>Please find contact below.</h3>
                     </div>
                   </div>
                 </div>
               </div>
 
-
               <!-- TAB -->
               <div role="tabpanel" class="tab-pane fade" id="technologies" aria-labelledby="technologies-tab">
                 <div class="row">
-
                   <h4>Worked with:</h4><br>
-
-                  <div class="accordion" id="accordionTechnologies">
+                  <div class="accordion" id="accordionWorkedWith">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingTechnologies">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -123,7 +98,7 @@
                         </button>
                       </h2>
                       <div id="collapseTechnologies" class="accordion-collapse collapse show"
-                        aria-labelledby="headingTechnologies" data-bs-parent="#accordionTechnologies">
+                        aria-labelledby="headingTechnologies" data-bs-parent="#accordionWorkedWith">
                         <div class="accordion-body">
                           <p>C#, Java, .Net Framework, Spring, Python, SQL, MSSQL, PostgreSQL, OracleDB, MySQL, Entity
                             Framework, Hibernate, Maven, HTML, CSS, Bootstrap, AngularJS, jQuery, SVN, GIT, Jenkins,
@@ -140,10 +115,10 @@
                         </button>
                       </h2>
                       <div id="collapseTools" class="accordion-collapse collapse" aria-labelledby="headingTools"
-                        data-bs-parent="#accordionExample">
+                        data-bs-parent="#accordionWorkedWith">
                         <div class="accordion-body">
                           <p>Visual Studio Code, Atom, Visual Studio, Eclipse, IntelliJ IDEA, Source Tree, Firebug,
-                            Chrome Dev Tools</p>
+                            Chrome Dev Tools, Windows, Linux (Debian Based)</p>
                         </div>
                       </div>
                     </div>
@@ -154,8 +129,8 @@
                           Programming Principles:
                         </button>
                       </h2>
-                      <div id="collapsePrinciples" class="accordion-collapse collapse" aria-labelledby="headingPrinciples"
-                        data-bs-parent="#accordionExample">
+                      <div id="collapsePrinciples" class="accordion-collapse collapse"
+                        aria-labelledby="headingPrinciples" data-bs-parent="#accordionWorkedWith">
                         <div class="accordion-body">
                           <p>Keep It Simple, Stupid (KISS), Don't Repeat Yourself (DRY), Object Oriented Programming
                             (OOP), Functional Programming</p>
@@ -170,108 +145,98 @@
                         </button>
                       </h2>
                       <div id="collapseTrackers" class="accordion-collapse collapse" aria-labelledby="headingTrackers"
-                        data-bs-parent="#accordionExample">
+                        data-bs-parent="#accordionWorkedWith">
                         <div class="accordion-body">
-                          <p>Jira, Bugzilla, MS Teams</p>
+                          <p>Jira, Bugzilla, MS Team Foundation Server</p>
                         </div>
                       </div>
                     </div>
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingMethodology">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseMethodology" aria-expanded="false" aria-controls="collapseMethodology">
+                          data-bs-target="#collapseMethodology" aria-expanded="false"
+                          aria-controls="collapseMethodology">
                           Project Methodology:
                         </button>
                       </h2>
-                      <div id="collapseMethodology" class="accordion-collapse collapse" aria-labelledby="headingMethodology"
-                        data-bs-parent="#accordionExample">
+                      <div id="collapseMethodology" class="accordion-collapse collapse"
+                        aria-labelledby="headingMethodology" data-bs-parent="#accordionWorkedWith">
                         <div class="accordion-body">
                           <p>Agile, SCRUM, Alone, Sprint, Rolling Releases</p>
                         </div>
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
 
-
               <!-- TAB -->
               <div role="tabpanel" class="tab-pane fade" id="projects" aria-labelledby="projects-tab">
-                <h4>Worked on projects:</h4><br>
+                <div class="row">
+                  <h4>Worked on projects:</h4><br>
+                  <ul class="workedOnProjects">
+                    <li>Own Landing Web Page</li>
+                    <dd>HTML 5, Bootstrap 5</dd>
 
-                <ul>
-                  <li>Own Landing Web Page</li>
-                  <dd>HTML 5, Bootstrap 5</dd>
+                    <li>Custom Code</li>
+                    <dd>Java 8, PostgreSQL 12</dd>
 
-                  <li>Custom Code</li>
-                  <dd>Java 8, PostgreSQL 12</dd>
+                    <li>Insurance Cases Management Web Application</li>
+                    <dd>Java 7,8, Spring 5.0, Hibernate, jQuery 1.11, FTL, OracleDB 12, Jenkins 1, jUnit, Docker, GIT,
+                      Maven, Tomcat</dd>
 
-                  <li>Insurance Cases Management Web Application</li>
-                  <dd>Java 7,8, Spring 5.0, Hibernate, jQuery 1.11, FTL, OracleDB 12, Jenkins 1, jUnit, Docker, GIT,
-                    Maven, Tomcat</dd>
+                    <li>Book Store Management Web Application</li>
+                    <dd>Java 8, Spring 5.0, AngularJS 1, GIT, H2 DB</dd>
 
-                  <li>Book Store Management Web Application</li>
-                  <dd>Java 8, Spring 5.0, AngularJS 1, GIT, H2 DB</dd>
+                    <li>Insurance Cases Management Desktop and Web Application</li>
+                    <dd>C# 6, .Net 4.6, WinForms, ASP.Net, jQuery 1.11, nHibernate, MSSQL 2012, GIT</dd>
 
-                  <li>Insurance Cases Management Desktop and Web Application</li>
-                  <dd>C# 6, .Net 4.6, WinForms, ASP.Net, jQuery 1.11, nHibernate, MSSQL 2012, GIT</dd>
+                    <li>Company Employee Technical Skill Rating Web Application</li>
+                    <dd>C# 6, .Net 4.6, MSSQL 2012, Bootstrap 3, AngularJS 1, GIT</dd>
 
-                  <li>Company Employee Technical Skill Rating Web Application</li>
-                  <dd>C# 6, .Net 4.6, MSSQL 2012, Bootstrap 3, AngularJS 1, GIT</dd>
+                    <li>Web API</li>
+                    <dd>C# 5, .Net 4.5, WCF, PostgreSQL 8, SVN</dd>
 
-                  <li>Web API</li>
-                  <dd>C# 5, .Net 4.5, WCF, PostgreSQL 8, SVN</dd>
+                    <li>Client Job Tasks Tracker Web Application</li>
+                    <dd>C# 5, .Net 4.5, MSSQL 2008, ASP.Net, Entity Framework, jQuery 1.10, SVN</dd>
 
-                  <li>Client Job Tasks Tracker Web Application</li>
-                  <dd>C# 5, .Net 4.5, MSSQL 2008, ASP.Net, Entity Framework, jQuery 1.10, SVN</dd>
+                    <li>Internal Business Logic DLL</li>
+                    <dd>C# 5, .Net 4.5, MSSQL 2008, SVN</dd>
 
-                  <li>Internal Business Logic DLL</li>
-                  <dd>C# 5, .Net 4.5, MSSQL 2008, SVN</dd>
+                    <li>Custom Client Tasks Portal HTTP API Desktop Application</li>
+                    <dd>C# 4, .Net 4, MSSQL 2008, Firebug, SVN</dd>
 
-                  <li>Custom Client Tasks Portal HTTP API Desktop Application</li>
-                  <dd>C# 4, .Net 4, MSSQL 2008, Firebug, SVN</dd>
+                    <li>Automatic Processing and Transferring of Text Files Desktop Application</li>
+                    <dd>C# 4, .Net 4, WinForms, MSSQL 2008, SVN</dd>
 
-                  <li>Automatic Processing and Transferring of Text Files Desktop Application</li>
-                  <dd>C# 4, .Net 4, WinForms, MSSQL 2008, SVN</dd>
+                    <li>Processing Text Files Desktop Application</li>
+                    <dd>C# 4, .Net 4, WinForms, Excel, SVN</dd>
 
-                  <li>Processing Text Files Desktop Application</li>
-                  <dd>C# 4, .Net 4, WinForms, Excel, SVN</dd>
+                    <li>Processing File Transfers Desktop Application</li>
+                    <dd>C# 4, .Net 4, WinForms, SVN</dd>
 
-                  <li>Processing File Transfers Desktop Application</li>
-                  <dd>C# 4, .Net 4, WinForms, SVN</dd>
+                    <li>Custom SQL Queries</li>
+                    <dd>MSSQL 2008, SVN</dd>
 
-                  <li>Custom SQL Queries</li>
-                  <dd>MSSQL 2008, SVN</dd>
+                    <li>Small Company Website</li>
+                    <dd>HTML 4, CSS 2, JavaScript ES5</dd>
 
-                  <li>Small Company Website</li>
-                  <dd>HTML 4, CSS 2, JavaScript ES5</dd>
+                    <li>Small Company Website</li>
+                    <dd>HTML 4, CSS 2</dd>
 
-                  <li>Small Company Website</li>
-                  <dd>HTML 4, CSS 2</dd>
-
-                  <li>Custom Python Scripts</li>
-                  <dd>Python 2</dd>
-                </ul>
+                    <li>Custom Python Scripts</li>
+                    <dd>Python 2</dd>
+                  </ul>
+                </div>
               </div>
-
-
-              <!-- TAB -->
-              <div role="tabpanel" class="tab-pane fade" id="methodologies" aria-labelledby="methodologies-tab">
-                <h4>Ideas?</h4>
-              </div>
-
             </div>
-
           </div>
-
-
 
           <!-- Footer -->
 
           <div class="footer">
             <div class="row">
-              <div class="col-xs-6 justify-content-end">
+              <div class="col-xs-6">
                 <p class="icon-footer">
                   <a href="https://github.com/kruzo7"> <span class="icon-github"></span> GitHub </a> <span
                     class="divider"></span>
@@ -284,12 +249,10 @@
             </div>
           </div>
 
-
         </div>
       </div>
     </div>
   </div>
-
 </body>
 
 </html>
