@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 /* CSS Document */
-html, body {
+html,
+body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -16,7 +17,9 @@ a {
   transition: all 0.5s;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   outline: none;
   -webkit-transition: all 0.5s;
@@ -24,12 +27,18 @@ a:hover, a:focus, a:active {
   transition: all 0.5s;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 24px;
 }
 
 /* button style */
-.btn, .btn.disabled {
+.btn,
+.btn.disabled {
   background: #f44336;
   color: #ffffff;
   border: 0;
@@ -46,7 +55,9 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
   opacity: .5;
 }
 
@@ -68,9 +79,18 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-50%);
 }
 
-.left-wrapper, .right-wrapper {
+.left-wrapper,
+.right-wrapper {
   padding-right: 0px;
   padding-left: 0px;
+}
+
+.right-wrapper {
+  z-index: 99;
+}
+
+#myCarousel {
+  z-index: -1;
 }
 
 .banner-wrapper {
@@ -78,26 +98,54 @@ h1, h2, h3, h4, h5, h6 {
   width: 41.66666667%;
   height: 100%;
   padding: 20px;
-  background: url(../images/banner.jpg);
+  z-index: 1;
   background-position: center;
+
+  /* 
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+   */
+
+}
+
+.background01 {
+  background: url(../images/banner.jpg) no-repeat center;
+}
+.background02 {
+  background: url(../images/banner_02.jpg) no-repeat center;
+}
+.background03 {
+  background: url(../images/banner_03.jpg) no-repeat center;
+}
+.background04 {
+  background: url(../images/banner_04.jpg) no-repeat center;
+}
+.background05 {
+  background: url(../images/banner_05.jpg) no-repeat center;
+}
+
+.banner-wrapper-text {
+  position: fixed;
+  width: 41.66666667%;
+  height: 100%;
+  padding: 20px;
+  z-index: 99;
 }
 
 .logo h1 {
   font-family: 'Nixie One', sans-serif;
   font-weight: bold;
-  font-size: 28px;  
+  font-size: 28px;
   position: absolute;
-  color: #ffffff;  
+  color: #ffffff;
   margin: 0;
   top: 20px;
   left: 20px;
 }
 
-.banner-wrapper h2 {
+.banner-wrapper-text h2 {
   position: absolute;
   font-family: 'Nixie One', sans-serif;
   font-size: 42px;
@@ -108,13 +156,13 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 30px;
 }
 
-.banner-wrapper h2 span {
+.banner-wrapper-text h2 span {
   display: block;
   text-transform: uppercase;
   font-size: 1.5vw;
 }
 
-.banner-wrapper p {
+.banner-wrapper-text p {
   position: absolute;
   font-family: 'Nixie One', sans-serif;
   font-size: 16px;
@@ -124,17 +172,17 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 15px;
 }
 
-.banner-wrapper p a {
+.banner-wrapper-text p a {
   color: #fff;
 }
 
-.banner-wrapper p a:hover {
+.banner-wrapper-text p a:hover {
   border-bottom: 1px solid #fff;
 }
 
 /* event tab css */
 .event-tab-wrapper {
-  padding: 40px;  
+  padding: 40px;
 }
 
 .event-tab .nav-tabs {
@@ -192,12 +240,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto;
 }
 
-.news h1, h2, h3 {
+.news h1,
+h2,
+h3 {
   margin-bottom: 2em;
 }
 
 .accordion {
-  margin-top: 2em; 
+  margin-top: 2em;
 }
 
 .accordion-button:not(.collapsed) {
@@ -217,17 +267,17 @@ h1, h2, h3, h4, h5, h6 {
 .workedOnProjects {
   font-size: 1.15rem;
   margin-top: 1.5em;
-  margin-left: 2em;    
+  margin-left: 2em;
   padding-right: 1.5em;
 }
 
-.workedOnProjects li {  
+.workedOnProjects li {
   font-weight: bold;
 }
 
 /* footer style */
 .footer {
-  padding: 20px 40px;  
+  padding: 20px 40px;
   background: #d0d0d0;
   margin-bottom: 0;
   position: fixed;
@@ -310,7 +360,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .footer {
-    padding: 15px;    
+    padding: 15px;
     margin-bottom: 0;
     position: fixed;
     left: 0;
@@ -322,7 +372,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* media query for Mobile */
 @media (max-width: 480px) {
- 
+
   .event-tab .nav-tabs>li>button {
     font-size: 16px;
     margin-right: 0;
