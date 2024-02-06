@@ -61,6 +61,10 @@ fieldset[disabled] .btn {
   opacity: .5;
 }
 
+.container-fluid {
+  min-height: 700px;
+}
+
 /* loader */
 .loader {
   position: fixed;
