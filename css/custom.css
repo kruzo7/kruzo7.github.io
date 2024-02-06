@@ -228,6 +228,10 @@ fieldset[disabled] .btn {
   -webkit-transition: all 0.5s;
 }
 
+.event-tab {
+  background-color: white;
+}
+
 .event-tab .tab-content {
   margin-top: 45px;
 }
@@ -274,14 +278,14 @@ h3 {
   font-size: 1.15rem;
 }
 
-.workedOnProjects {
+.workedOnProjects, .courses {
   font-size: 1.15rem;
   margin-top: 1.5em;
   margin-left: 2em;
   padding-right: 1.5em;
 }
 
-.workedOnProjects li {
+.workedOnProjects, .courses li {
   font-weight: bold;
 }
 
