@@ -111,23 +111,28 @@ fieldset[disabled] .btn {
 }
 
 .background01 {
-  background: url(../images/banner.jpg) no-repeat center;  
+  background: url(../images/banner.jpg) no-repeat center black;
+  background-size: cover;
 }
 
 .background02 {
-  background: url(../images/banner_02.jpg) no-repeat center;
+  background: url(../images/banner_02.jpg) no-repeat center black;
+  background-size: cover;
 }
 
-.background03 {
-  background: url(../images/banner_03.jpg) no-repeat center;
+.background03 {  
+  background: url(../images/banner_03.jpg) no-repeat center black;
+  background-size: cover;
 }
 
-.background04 {
-  background: url(../images/banner_04.jpg) no-repeat center;
+.background04 {  
+  background: url(../images/banner_04.jpg) no-repeat center black;
+  background-size: cover;
 }
 
 .background05 {
-  background: url(../images/banner_05.jpg) no-repeat center;
+  background: url(../images/banner_05.jpg) no-repeat center black;
+  background-size: cover;
 }
 
 .banner-wrapper-text {
@@ -233,6 +238,7 @@ fieldset[disabled] .btn {
 
 .tab-pane {
   margin-top: 1rem;
+  background-color: white;
 }
 
 .newsOuter {
