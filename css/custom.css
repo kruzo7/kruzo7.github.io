@@ -338,6 +338,10 @@ h3 {
   background: url(../images/icons/linkedin-circled.svg);
 }
 
+.icon-biolink {
+  background: url(../images/icons/biolink.svg);
+}
+
 .icon-email {
   background: url(../images/icons/email.png);
 }
