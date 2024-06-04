@@ -358,6 +358,14 @@ h3 {
   background: url(../images/vCard-QR.svg);
 }
 
+.icon-discord {
+  background: url(../images/icons/discord.svg);
+}
+
+.icon-useme {
+  background: url(../images/icons/useme.svg);
+}
+
 /* media query for tab */
 @media (max-width: 767px) {
   .banner-wrapper {
