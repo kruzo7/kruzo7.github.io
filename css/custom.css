@@ -241,7 +241,7 @@ fieldset[disabled] .btn {
 }
 
 .event-tab .tab-content .tab-pane {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 .tab-pane {
@@ -314,7 +314,7 @@ h3 {
 }
 
 .footer .divider {
-  border-right: 3px solid #ccc;
+  border-right: 3px solid rgb(255, 58, 58);
   padding-left: 15px;
   margin-right: 15px;
 }
@@ -344,6 +344,18 @@ h3 {
 
 .icon-email {
   background: url(../images/icons/email.png);
+}
+
+.icon-ms-teams {
+  background: url(../images/icons/microsoft-office-teams.svg);
+}
+
+.icon-google-chat {
+  background: url(../images/icons/google-chat.svg);
+}
+
+.icon-qr {
+  background: url(../images/vCard-QR.svg);
 }
 
 /* media query for tab */
