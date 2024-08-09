@@ -124,21 +124,6 @@ fieldset[disabled] .btn {
   background-size: cover;
 }
 
-.background03 {  
-  background: url(../images/banner_03.jpg) no-repeat center black;
-  background-size: cover;
-}
-
-.background04 {  
-  background: url(../images/banner_04.jpg) no-repeat center black;
-  background-size: cover;
-}
-
-.background05 {
-  background: url(../images/banner_05.jpg) no-repeat center black;
-  background-size: cover;
-}
-
 .banner-wrapper-text {
   position: fixed;
   width: 41.66666667%;
@@ -352,10 +337,6 @@ h3 {
 
 .icon-google-chat {
   background: url(../images/icons/google-chat.svg);
-}
-
-.icon-qr {
-  background: url(../images/vCard-QR.svg);
 }
 
 .icon-discord {
