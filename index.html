@@ -1,344 +1,583 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Software Developer</title>
 
-  <title>Software Developer</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sitescript.js"></script>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/sitescript.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
 
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/custom.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet" />
+  </head>
 
-  <link href="css/fonts.css" rel="stylesheet">
-</head>
-
-<body>
-
-  <div class="loader">
-    <div>
-      <img src="images/icons/preloader.gif" />
-    </div>
-  </div>
-
-  <div class="container-fluid">
-    <div class="row">
-
-      <div class="col-sm-5 left-wrapper">
-
-        <div class="banner-wrapper-text">
-          <div class="logo">
-            <h1>Waldemar Rutkowski</h1>
-          </div>
-          <h2>
-            Software Developer
-          </h2>
-          <p id="year"></p>          
-        </div>
-
-        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-          <div class="carousel-inner">
-            
-            <div class="carousel-item active">
-              <div class="background01 banner-wrapper d-block">
-                <div class="carousel-caption">
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-
+  <body>
+    <div class="loader">
+      <div>
+        <img src="images/icons/preloader.gif" />
       </div>
+    </div>
 
-      <div class="col-sm-7 right-wrapper">
-
-        <div class="event-tab-wrapper">
-
-          <div class="event-tab">
-
-            <!-- Nav tabs -->
-
-            <ul class="nav nav-tabs nav-fill" role="tablist">
-              <li role="presentation" class="nav-item">
-                <button class="nav-link active" id="news-tab" data-bs-toggle="tab" data-bs-target="#news" type="button"
-                  role="tab" aria-controls="news" aria-selected="true">Start</button>
-              </li>
-              <li role="presentation" class="nav-item">
-                <button class="nav-link" id="technologies-tab" data-bs-toggle="tab" data-bs-target="#technologies"
-                  type="button" role="tab" aria-controls="technologies" aria-selected="false">Overall</button>
-              </li>
-              <li role="presentation" class="nav-item">
-                <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button"
-                  role="tab" aria-controls="projects" aria-selected="false">Projects</button>
-              </li>
-              <li role="presentation" class="nav-item">
-                <button class="nav-link" id="courses-tab" data-bs-toggle="tab" data-bs-target="#courses" type="button"
-                  role="tab" aria-controls="courses" aria-selected="false">Courses</button>
-              </li>
-            </ul>
-
-            <!-- Tab panes -->
-
-            <div class="tab-content">
-
-              <!-- TAB -->
-              <div role="tabpanel" class="tab-pane fade show active" id="news" aria-labelledby="news-tab">
-                <div class="row">
-                  <div class="newsOuter">
-                    <div class="news">
-                      <h1>Welcome to My Personal Landing Page</h1>
-                      <h2>I will be happy to work on your software project. If you're interested, please take a look.</h2>
-                      <h3>
-                        <ul>
-                          <li>Are you looking for someone to complete a project?</li>
-                          <li>Do you want to hire me?</li>
-                          <li>Do you have another job or project proposal, or perhaps just want to share some Tips &
-                            Tricks?</li>                          
-                        </ul>
-
-                      </h3>                      
-                      <h3>
-                        Please find contact information below.
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- TAB -->
-              <div role="tabpanel" class="tab-pane fade" id="technologies" aria-labelledby="technologies-tab">
-                <div class="row">
-                  <h4>Worked with:</h4><br>
-                  <div class="accordion" id="accordionWorkedWith">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTechnologies">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseTechnologies" aria-expanded="true"
-                          aria-controls="collapseTechnologies">
-                          Technologies:
-                        </button>
-                      </h2>
-                      <div id="collapseTechnologies" class="accordion-collapse collapse show"
-                        aria-labelledby="headingTechnologies" data-bs-parent="#accordionWorkedWith">
-                        <div class="accordion-body">
-                          <p>C#, Java, .Net Framework, Spring, Python, SQL, MSSQL, PostgreSQL, OracleDB, MySQL, Entity
-                            Framework, Hibernate, Maven, HTML, CSS, Bootstrap, AngularJS, jQuery, SVN, GIT, Jenkins,
-                            Docker, Basic, Visual Basic, Turbo Pascal, C, C++, WinForms,
-                            ASP.Net, Azure Cloud, Blazor, Rust, Go</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTools">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseTools" aria-expanded="false" aria-controls="collapseTools">
-                          Tools:
-                        </button>
-                      </h2>
-                      <div id="collapseTools" class="accordion-collapse collapse" aria-labelledby="headingTools"
-                        data-bs-parent="#accordionWorkedWith">
-                        <div class="accordion-body">
-                          <p>Visual Studio Code, Atom, Visual Studio, Eclipse, IntelliJ IDEA, Source Tree, Firebug,
-                            Chrome Dev Tools, Windows, Linux (Debian Based)</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingPrinciples">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapsePrinciples" aria-expanded="false" aria-controls="collapsePrinciples">
-                          Programming Principles:
-                        </button>
-                      </h2>
-                      <div id="collapsePrinciples" class="accordion-collapse collapse"
-                        aria-labelledby="headingPrinciples" data-bs-parent="#accordionWorkedWith">
-                        <div class="accordion-body">
-                          <p>Keep It Simple, Don't Repeat Yourself, Object Oriented Programming, Functional Programming
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTrackers">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseTrackers" aria-expanded="false" aria-controls="collapseTrackers">
-                          Project Trackers:
-                        </button>
-                      </h2>
-                      <div id="collapseTrackers" class="accordion-collapse collapse" aria-labelledby="headingTrackers"
-                        data-bs-parent="#accordionWorkedWith">
-                        <div class="accordion-body">
-                          <p>Jira, Bugzilla, MS Team Foundation Server, Azure DevOps</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingMethodology">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseMethodology" aria-expanded="false"
-                          aria-controls="collapseMethodology">
-                          Project Methodology:
-                        </button>
-                      </h2>
-                      <div id="collapseMethodology" class="accordion-collapse collapse"
-                        aria-labelledby="headingMethodology" data-bs-parent="#accordionWorkedWith">
-                        <div class="accordion-body">
-                          <p>Agile, SCRUM, Alone, Sprint, Rolling Releases</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- TAB -->
-              <div role="tabpanel" class="tab-pane fade" id="projects" aria-labelledby="projects-tab">
-                <div class="row">
-                  <h4>Worked on projects:</h4><br>
-                  <ul class="workedOnProjects">
-                    <li><a href="https://github.com/kruzo7/go-lang-email-summary">Sample CLI CSV parser (2025)</a></li>
-                    <dd>Go Lang  1.24</dd>
-
-                    <li><a href="https://github.com/kruzo7/dotnet-api-without-orm">Sample API NoORM (pure SQL) (2025)</a></li>
-                    <dd>.Net 6, C# 10, MS SQL Server 2022</dd>
-
-                    <li><a href="https://github.com/kruzo7/dotnet-cloud-candidates-catalog">Web Application for storing and browsing Candidates profiles (2024)</a></li>
-                    <dd>.Net 6, C# 10, Blazor WASM (WebAssembly), Azure Functions, Azure SQL, Azure API Management,
-                      Azure Cognitive Search, Azure Blob Storage, EF Core, CQRS</dd>
-
-                    <li>Micro services Web Application for Packages Delivery Management (2023)</li>
-                    <dd>.Net 6, C# 10, Cloud Azure "Lift and Shift"</dd>                    
-
-                    <li>Web Application for facility management - customers and workers; finance and bookings (2022)</li>
-                    <dd>.Net 4.7, C# 7.3, WebForms, MSSQL, JavaScript, jQuery</dd>
-
-                    <li><a href="https://github.com/kruzo7/kruzo7.github.io">Own Landing Web Page (2022)</a></li>
-                    <dd>HTML 5, Bootstrap 5</dd>
-
-                    <li>Custom Code (2019)</li>
-                    <dd>Java 8, PostgreSQL 12</dd>
-
-                    <li>Insurance Cases Management Web Application (2016)</li>
-                    <dd>Java 7,8, Spring 5.0, Hibernate, jQuery 1.11, FTL, OracleDB 12, Jenkins 1, jUnit, Docker, GIT,
-                      Maven, Tomcat</dd>
-
-                    <li><a href="https://github.com/kruzo7/java-spring-mvc-book-store-exercise">Book Store Management Web Application (2016)</a></li>
-                    <dd>Java 8, Spring 5.0, AngularJS 1, GIT, H2 DB</dd>
-
-                    <li>Insurance Cases Management Desktop and Web Application (2015)</li>
-                    <dd>C# 6, .Net 4.6, WinForms, ASP.Net, jQuery 1.11, nHibernate, MSSQL 2012, GIT</dd>
-
-                    <li>Company Employee Technical Skill Rating Web Application (2015)</li>
-                    <dd>C# 6, .Net 4.6, MSSQL 2012, Bootstrap 3, AngularJS 1, GIT</dd>
-
-                    <li>Web API (2014)</li>
-                    <dd>C# 5, .Net 4.5, WCF, PostgreSQL 8, SVN</dd>
-
-                    <li>Client Job Tasks Tracker Web Application (2013)</li>
-                    <dd>C# 5, .Net 4.5, MSSQL 2008, ASP.Net, Entity Framework, jQuery 1.10, SVN</dd>
-
-                    <li>Internal Business Logic DLL (2013)</li>
-                    <dd>C# 5, .Net 4.5, MSSQL 2008, SVN</dd>
-
-                    <li>Custom Client Tasks Portal HTTP API Desktop Application (2012)</li>
-                    <dd>C# 4, .Net 4, MSSQL 2008, Firebug, SVN</dd>
-
-                    <li>Automatic Processing and Transferring of Text Files Desktop Application (2011)</li>
-                    <dd>C# 4, .Net 4, WinForms, MSSQL 2008, SVN</dd>
-
-                    <li>Processing Text Files Desktop Application (2011)</li>
-                    <dd>C# 4, .Net 4, WinForms, Excel, SVN</dd>
-
-                    <li>Processing File Transfers Desktop Application (2010)</li>
-                    <dd>C# 4, .Net 4, WinForms, SVN</dd>
-
-                    <li>Small Company Website (2010)</li>
-                    <dd>HTML 4, CSS 2, JavaScript ES5</dd>
-                    
-                    <li>Custom SQL Queries (2008)</li>
-                    <dd>MSSQL 2008, SVN</dd>                    
-
-                    <li>Small Company Website (2006)</li>
-                    <dd>HTML 4, CSS 2</dd>
-
-                    <li>Custom Python Scripts (2006)</li>
-                    <dd>Python 2</dd>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- TAB -->
-              <div role="tabpanel" class="tab-pane fade" id="courses" aria-labelledby="courses-tab">
-                <div class="row">
-                  <h4>Courses:</h4><br>
-                  <ul class="courses">                    
-                    <li>Linux on Azure (2024)</li>
-                    <li>Data API builder preview on Azure Static Web App and also on Azure Container Apps (2024)</li>
-                    <li>Designing and Implementing Cloud-Native Applications Using Microsoft Azure Cosmos DB (2024)</li>
-                    <li>Getting Started with Cosmos DB NoSQL Development (2024)</li>
-                    <li>Build your tech resilience (2024)</li>
-                    <li><a href="https://github.com/kruzo7/go-first-steps">Take your first steps with Go (2024)</a></li>
-                    <li><a href="https://github.com/kruzo7/rust-first-steps">Take your first steps with Rust (2024)</a></li>
-                    <li>Cloud Azure Fundamentals (2024)</li>
-                    <li>Docker Mastery: with Kubernetes +Swarm from a Docker Captain (2024)</li>
-                    <li>CQRS in Azure (Azure, Blazor) (2024)</li>
-                    <li>Event Storming and Domain Driven Development (2023)</li>
-                    <li>Designing modular, distributed and event systems: Practical approach (2022)</li>
-                    <li>Programming database in T-SQL language (2014)</li>
-                  </ul>
-                </div>
-              </div>
-
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-5 left-wrapper">
+          <div class="banner-wrapper-text">
+            <div class="logo">
+              <h1>Waldemar Rutkowski</h1>
             </div>
+            <h2>Software Developer</h2>
+            <p id="year"></p>
           </div>
 
-          <!-- Footer -->
+          <div
+            id="myCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="background01 banner-wrapper d-block">
+                  <div class="carousel-caption"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <div class="footer">
-            <div class="row">
-              <div class="col-xs-6">
-                <p class="icon-footer">
-                  <a href="https://github.com/kruzo7"> <span class="icon-github"></span> GitHub </a> <span
-                    class="divider"></span>
-                  <a href="https://www.linkedin.com/in/waldemar-r-20a5591a4"><span class="icon-linkedin"></span>
-                    LinkedIn </a> <span class="divider"></span>
-                  <a href="mailto:kruzo7@gmail.com"><span class="icon-email"></span> e-mail </a> <span
-                    class="divider"></span>
-                  <a href="https://bio.link/kruzo7"><span class="icon-biolink"></span>
-                    bio.link </a> <span class="divider"></span>                  
-                  <a href="https://useme.com/en/roles/contractor/waldemar-rutkowski,161014/"><span class="icon-useme"></span> useme</a>
-                  <br />
-                  <a href="https://chat.google.com/"><span class="icon-google-chat"></span> Google Chat User:
-                    kruzo7@gmail.com</a>
-                  <br />
-                  <a href="https://teams.microsoft.com/"><span class="icon-ms-teams"></span> MS Teams User:
-                    kruzo7-1@outlook.com</a>
+        <div class="col-sm-7 right-wrapper">
+          <div class="event-tab-wrapper">
+            <div class="event-tab">
+              <!-- Nav tabs -->
+
+              <ul class="nav nav-tabs nav-fill" role="tablist">
+                <li role="presentation" class="nav-item">
+                  <button
+                    class="nav-link active"
+                    id="news-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#news"
+                    type="button"
+                    role="tab"
+                    aria-controls="news"
+                    aria-selected="true"
+                  >
+                    Start
+                  </button>
+                </li>
+                <li role="presentation" class="nav-item">
+                  <button
+                    class="nav-link"
+                    id="technologies-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#technologies"
+                    type="button"
+                    role="tab"
+                    aria-controls="technologies"
+                    aria-selected="false"
+                  >
+                    Overall
+                  </button>
+                </li>
+                <li role="presentation" class="nav-item">
+                  <button
+                    class="nav-link"
+                    id="projects-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#projects"
+                    type="button"
+                    role="tab"
+                    aria-controls="projects"
+                    aria-selected="false"
+                  >
+                    Projects
+                  </button>
+                </li>
+                <li role="presentation" class="nav-item">
+                  <button
+                    class="nav-link"
+                    id="courses-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#courses"
+                    type="button"
+                    role="tab"
+                    aria-controls="courses"
+                    aria-selected="false"
+                  >
+                    Courses
+                  </button>
+                </li>
+                <li role="presentation" class="nav-item">
+                  <button
+                    class="nav-link"
+                    id="other-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#other"
+                    type="button"
+                    role="tab"
+                    aria-controls="other"
+                    aria-selected="false"
+                  >
+                    Other
+                  </button>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+
+              <div class="tab-content icon-tab-body">
+                <!-- TAB -->
+                <div
+                  role="tabpanel"
+                  class="tab-pane fade show active"
+                  id="news"
+                  aria-labelledby="news-tab"
+                >
+                  <div class="row">
+                    <div class="newsOuter">
+                      <div class="news">
+                        <p>
+                          Welcome to my personal web page! I am a passionate
+                          software developer with a strong commitment to
+                          creating innovative solutions and collaborating on
+                          exciting projects. With a background in various
+                          programming languages and frameworks, I specialize in
+                          developing robust applications that meet the unique
+                          needs of businesses and individuals alike.
+                        </p>
+                        <p>
+                          My goal is to not only deliver high-quality software
+                          but also to foster meaningful partnerships through
+                          consulting and collaboration. Whether you're looking
+                          for a skilled developer to join your team, seeking
+                          advice on best practices, or exploring new
+                          technologies, I'm here to help.
+                        </p>
+                        <p>
+                          Feel free to explore my portfolio, learn more about my
+                          skills, and reach out if you have a project in mind or
+                          need assistance. Let's create something amazing
+                          together!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- TAB -->
+                <div
+                  role="tabpanel"
+                  class="tab-pane fade"
+                  id="technologies"
+                  aria-labelledby="technologies-tab"
+                >
+                  <div class="row">
+                    <h4>Worked with:</h4>
                     <br />
-                  <a href="https://discord.com/"><span class="icon-discord"></span> Discord User:
-                    kruzo7</a>
+                    <div class="accordion" id="accordionWorkedWith">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTechnologies">
+                          <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTechnologies"
+                            aria-expanded="true"
+                            aria-controls="collapseTechnologies"
+                          >
+                            Technologies:
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseTechnologies"
+                          class="accordion-collapse collapse show"
+                          aria-labelledby="headingTechnologies"
+                          data-bs-parent="#accordionWorkedWith"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              C#, Java, .Net Framework, Spring, Python, SQL,
+                              MSSQL, PostgreSQL, OracleDB, MySQL, Entity
+                              Framework, Hibernate, Maven, HTML, CSS, Bootstrap,
+                              AngularJS, jQuery, SVN, GIT, Jenkins, Docker,
+                              Basic, Visual Basic, Turbo Pascal, C, C++,
+                              WinForms, ASP.Net, Azure Cloud, Blazor, Rust, Go
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTools">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTools"
+                            aria-expanded="false"
+                            aria-controls="collapseTools"
+                          >
+                            Tools:
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseTools"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingTools"
+                          data-bs-parent="#accordionWorkedWith"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Visual Studio Code, Atom, Visual Studio, Eclipse,
+                              IntelliJ IDEA, Source Tree, Firebug, Chrome Dev
+                              Tools, Windows, Linux (Debian Based)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingPrinciples">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapsePrinciples"
+                            aria-expanded="false"
+                            aria-controls="collapsePrinciples"
+                          >
+                            Programming Principles:
+                          </button>
+                        </h2>
+                        <div
+                          id="collapsePrinciples"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingPrinciples"
+                          data-bs-parent="#accordionWorkedWith"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Keep It Simple, Don't Repeat Yourself, Object
+                              Oriented Programming, Functional Programming
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTrackers">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTrackers"
+                            aria-expanded="false"
+                            aria-controls="collapseTrackers"
+                          >
+                            Project Trackers:
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseTrackers"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingTrackers"
+                          data-bs-parent="#accordionWorkedWith"
+                        >
+                          <div class="accordion-body">
+                            <p>
+                              Jira, Bugzilla, MS Team Foundation Server, Azure
+                              DevOps
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingMethodology">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseMethodology"
+                            aria-expanded="false"
+                            aria-controls="collapseMethodology"
+                          >
+                            Project Methodology:
+                          </button>
+                        </h2>
+                        <div
+                          id="collapseMethodology"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingMethodology"
+                          data-bs-parent="#accordionWorkedWith"
+                        >
+                          <div class="accordion-body">
+                            <p>Agile, SCRUM, Alone, Sprint, Rolling Releases</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
+                <!-- TAB -->
+                <div
+                  role="tabpanel"
+                  class="tab-pane fade"
+                  id="projects"
+                  aria-labelledby="projects-tab"
+                >
+                  <div class="row">
+                    <h4>Worked on projects:</h4>
+                    <br />
+                    <ul class="workedOnProjects">
+                      <li>
+                        <a
+                          href="https://github.com/kruzo7/shopping-boiler"
+                          >API + FE Boiler Project Template (2025)</a
+                        >
+                      </li>
+                      <dd>.Net 9.0, C# 13.0, Node.js v24, Vite v7, Angular 20, TailwindCSS v4.1</dd>
 
-                  <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-                    data-name="bmc-button" data-slug="kruzo7" data-color="#FFDD00" data-emoji="" data-font="Cookie"
-                    data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000"
-                    data-coffee-color="#ffffff"></script>
+                      <li>
+                        <a
+                          href="https://github.com/kruzo7/go-lang-email-summary"
+                          >Sample CLI CSV parser (2025)</a
+                        >
+                      </li>
+                      <dd>Go Lang 1.24</dd>
 
-                </p>
+                      <li>
+                        <a
+                          href="https://github.com/kruzo7/dotnet-api-without-orm"
+                          >Sample API NoORM (pure SQL) (2025)</a
+                        >
+                      </li>
+                      <dd>.Net 6, C# 10, MS SQL Server 2022</dd>
+
+                      <li>
+                        <a
+                          href="https://github.com/kruzo7/dotnet-cloud-candidates-catalog"
+                          >Web Application for storing and browsing Candidates
+                          profiles (2024)</a
+                        >
+                      </li>
+                      <dd>
+                        .Net 6, C# 10, Blazor WASM (WebAssembly), Azure
+                        Functions, Azure SQL, Azure API Management, Azure
+                        Cognitive Search, Azure Blob Storage, EF Core, CQRS
+                      </dd>
+
+                      <li>
+                        Micro services Web Application for Packages Delivery
+                        Management (2023)
+                      </li>
+                      <dd>.Net 6, C# 10, Cloud Azure "Lift and Shift"</dd>
+
+                      <li>
+                        Web Application for facility management - customers and
+                        workers; finance and bookings (2022)
+                      </li>
+                      <dd>
+                        .Net 4.7, C# 7.3, WebForms, MSSQL, JavaScript, jQuery
+                      </dd>
+
+                      <li>
+                        <a href="https://github.com/kruzo7/kruzo7.github.io"
+                          >Own Landing Web Page (2022)</a
+                        >
+                      </li>
+                      <dd>HTML 5, Bootstrap 5</dd>
+
+                      <li>Custom Code (2019)</li>
+                      <dd>Java 8, PostgreSQL 12</dd>
+
+                      <li>Insurance Cases Management Web Application (2016)</li>
+                      <dd>
+                        Java 7,8, Spring 5.0, Hibernate, jQuery 1.11, FTL,
+                        OracleDB 12, Jenkins 1, jUnit, Docker, GIT, Maven,
+                        Tomcat
+                      </dd>
+
+                      <li>
+                        <a
+                          href="https://github.com/kruzo7/java-spring-mvc-book-store-exercise"
+                          >Book Store Management Web Application (2016)</a
+                        >
+                      </li>
+                      <dd>Java 8, Spring 5.0, AngularJS 1, GIT, H2 DB</dd>
+
+                      <li>
+                        Insurance Cases Management Desktop and Web Application
+                        (2015)
+                      </li>
+                      <dd>
+                        C# 6, .Net 4.6, WinForms, ASP.Net, jQuery 1.11,
+                        nHibernate, MSSQL 2012, GIT
+                      </dd>
+
+                      <li>
+                        Company Employee Technical Skill Rating Web Application
+                        (2015)
+                      </li>
+                      <dd>
+                        C# 6, .Net 4.6, MSSQL 2012, Bootstrap 3, AngularJS 1,
+                        GIT
+                      </dd>
+
+                      <li>Web API (2014)</li>
+                      <dd>C# 5, .Net 4.5, WCF, PostgreSQL 8, SVN</dd>
+
+                      <li>Client Job Tasks Tracker Web Application (2013)</li>
+                      <dd>
+                        C# 5, .Net 4.5, MSSQL 2008, ASP.Net, Entity Framework,
+                        jQuery 1.10, SVN
+                      </dd>
+
+                      <li>Internal Business Logic DLL (2013)</li>
+                      <dd>C# 5, .Net 4.5, MSSQL 2008, SVN</dd>
+
+                      <li>
+                        Custom Client Tasks Portal HTTP API Desktop Application
+                        (2012)
+                      </li>
+                      <dd>C# 4, .Net 4, MSSQL 2008, Firebug, SVN</dd>
+
+                      <li>
+                        Automatic Processing and Transferring of Text Files
+                        Desktop Application (2011)
+                      </li>
+                      <dd>C# 4, .Net 4, WinForms, MSSQL 2008, SVN</dd>
+
+                      <li>Processing Text Files Desktop Application (2011)</li>
+                      <dd>C# 4, .Net 4, WinForms, Excel, SVN</dd>
+
+                      <li>
+                        Processing File Transfers Desktop Application (2010)
+                      </li>
+                      <dd>C# 4, .Net 4, WinForms, SVN</dd>
+
+                      <li>Small Company Website (2010)</li>
+                      <dd>HTML 4, CSS 2, JavaScript ES5</dd>
+
+                      <li>Custom SQL Queries (2008)</li>
+                      <dd>MSSQL 2008, SVN</dd>
+
+                      <li>Small Company Website (2006)</li>
+                      <dd>HTML 4, CSS 2</dd>
+
+                      <li>Custom Python Scripts (2006)</li>
+                      <dd>Python 2</dd>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- TAB -->
+                <div
+                  role="tabpanel"
+                  class="tab-pane fade"
+                  id="courses"
+                  aria-labelledby="courses-tab"
+                >
+                  <div class="row">
+                    <h4>Courses:</h4>
+                    <br />
+                    <ul class="courses">
+                      <li>Linux on Azure (2024)</li>
+                      <li>
+                        Data API builder preview on Azure Static Web App and
+                        also on Azure Container Apps (2024)
+                      </li>
+                      <li>
+                        Designing and Implementing Cloud-Native Applications
+                        Using Microsoft Azure Cosmos DB (2024)
+                      </li>
+                      <li>
+                        Getting Started with Cosmos DB NoSQL Development (2024)
+                      </li>
+                      <li>Build your tech resilience (2024)</li>
+                      <li>
+                        <a href="https://github.com/kruzo7/go-first-steps"
+                          >Take your first steps with Go (2024)</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://github.com/kruzo7/rust-first-steps"
+                          >Take your first steps with Rust (2024)</a
+                        >
+                      </li>
+                      <li>Cloud Azure Fundamentals (2024)</li>
+                      <li>
+                        Docker Mastery: with Kubernetes +Swarm from a Docker
+                        Captain (2024)
+                      </li>
+                      <li>CQRS in Azure (Azure, Blazor) (2024)</li>
+                      <li>
+                        Event Storming and Domain Driven Development (2023)
+                      </li>
+                      <li>
+                        Designing modular, distributed and event systems:
+                        Practical approach (2022)
+                      </li>
+                      <li>Programming database in T-SQL language (2014)</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- TAB -->
+                <div
+                  role="tabpanel"
+                  class="tab-pane fade"
+                  id="other"
+                  aria-labelledby="other-tab"
+                >
+                  <div class="row">
+                    <div class="infoOther">
+                      <a href="https://www.linkedin.com/in/waldemar-r-20a5591a4"
+                        ><span class="icon-linkedin"></span> LinkedIn
+                      </a>
+
+                      <script
+                        type="text/javascript"
+                        src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+                        data-name="bmc-button"
+                        data-slug="kruzo7"
+                        data-color="#FFDD00"
+                        data-emoji=""
+                        data-font="Cookie"
+                        data-text="Buy me a coffee"
+                        data-outline-color="#000000"
+                        data-font-color="#000000"
+                        data-coffee-color="#ffffff"
+                      ></script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer -->
+
+            <div class="footer">
+              <div class="row">
+                <div class="col-xs-6">
+                  <p class="icon-footer">
+                    <a href="https://github.com/kruzo7">
+                      <span class="icon-github"></span> GitHub
+                    </a>
+                    <span class="divider"></span>
+
+                    <a href="mailto:wr.job@wr-tech.top"
+                      ><span class="icon-email"></span> e-mail
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
