@@ -279,12 +279,13 @@ fieldset[disabled] .btn {
 
 .infoOther a {
   margin-bottom: 0.5em;  
-  display: block; 
+  display: block;
 }
 
 .infoOther a span {
   margin-right: 0.2em;
 }
+
 
 /* footer style */
 .footer {
@@ -323,7 +324,7 @@ fieldset[disabled] .btn {
   height: 1.5em;
 }
 
-.icon-tab-body span {
+.icon-tab-body .icon-tab-i {
   display: inline-block;
   background-repeat: no-repeat;
   vertical-align: -.4em;
